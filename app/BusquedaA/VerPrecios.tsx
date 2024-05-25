@@ -219,7 +219,7 @@ const VerPrecios: NextPage<VerPreciosProps> = ({ originCity, destinationCity, ad
             <div key={index} className="flight-option" style={{ marginBottom: '20px', position: 'relative'}}>
         <div id = "resultContainer" className="best-price">MEJOR PRECIO</div>
         <div>
-            <div className="departure-time">{flight.hora_ida}</div>
+            <div id="departure-time" className="departure-time">{flight.hora_ida}</div>
             <div className="airport-codes">{originCity}</div>
         </div>
         <div className="flight-separator">
@@ -228,7 +228,7 @@ const VerPrecios: NextPage<VerPreciosProps> = ({ originCity, destinationCity, ad
         <div className="flex items-center justify-center">
             <div>
 
-        <button 
+        <button id="fligth-scale"
             onClick={() => {
                 handleFlightTypeClick(index);
                 setShowPricePanel(true);
@@ -244,11 +244,11 @@ const VerPrecios: NextPage<VerPreciosProps> = ({ originCity, destinationCity, ad
             <div className="flight-separator.left"></div>
         </div>
         <div>
-            <div className="arrival-time">{flight.hora_vuelta}</div>
+            <div id="arrival-time" className="arrival-time">{flight.hora_vuelta}</div>
             <div className="airport-codes">{destinationCity}</div>
         </div>
         <div>
-            <div className="price">
+            <div id="price-flight" className="price">
                 <div className="left-border"></div>
                 {flight.precio} COP
             </div>
@@ -456,7 +456,7 @@ const VerPrecios: NextPage<VerPreciosProps> = ({ originCity, destinationCity, ad
 
         <div key={index} className="flight-option" style={{ marginBottom: '20px', position: 'relative'}}>
             <div>
-                <div className="departure-time">{selectedFlightDetails.departureTime}</div>
+                <div id="departure-time" className="departure-time">{selectedFlightDetails.departureTime}</div>
                 <div className="airport-codes">{originCity}</div>
             </div>
             <div className="flight-separator">
@@ -470,7 +470,7 @@ const VerPrecios: NextPage<VerPreciosProps> = ({ originCity, destinationCity, ad
                 <div className="flight-separator.left"></div>
             </div>
             <div>
-                <div className="arrival-time">{selectedFlightDetails.arrivalTime}</div>
+                <div id="arrival-time" className="arrival-time">{selectedFlightDetails.arrivalTime}</div>
                 <div className="airport-codes">{destinationCity}</div>
             </div>
             <div>
