@@ -332,7 +332,7 @@ const VerPrecios: NextPage<VerPreciosProps> = ({ originCity, destinationCity, ad
                     </ul>
                     
                     <button 
-                        className="confirm-button-price" 
+                        id="class-economico-button" className="confirm-button-price" 
                         onClick={() => {
                             const selectedFlight = sortedFlights[selectedFlightIndex];
                             {handleSelectExecutivePrice("economico")}
@@ -413,7 +413,7 @@ const VerPrecios: NextPage<VerPreciosProps> = ({ originCity, destinationCity, ad
                 </li>
             </ul>
                     <button 
-                        className="confirm-button-price" 
+                        id="class-ejecutivo-button" className="confirm-button-price" 
                         onClick={() => {
                             const selectedFlight = sortedFlights[selectedFlightIndex];
                             {handleSelectExecutivePrice("ejecutivo")}
