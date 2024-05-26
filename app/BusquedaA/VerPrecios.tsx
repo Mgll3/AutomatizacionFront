@@ -260,7 +260,7 @@ const VerPrecios: NextPage<VerPreciosProps> = ({ originCity, destinationCity, ad
         {!showModal && (
             <>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px'}}>
-            <h2 style={{ fontWeight: 'bold', fontSize: '1.4em', textAlign: 'center', margin: '0 auto' }}>Selecciona el tipo de precio:</h2>
+            <h2 id='class-option' style={{ fontWeight: 'bold', fontSize: '1.4em', textAlign: 'center', margin: '0 auto' }}>Selecciona el tipo de precio:</h2>
 <button style={{ background: 'transparent', border: 'none', fontWeight: 'bold', marginTop: '10px' }} onClick={handleShowPanelPrice}>X</button>
 
             <div style={{ width: '50px' }}></div> {/* Espacio para centrar el texto */}
