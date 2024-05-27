@@ -296,7 +296,7 @@ const handleOriginChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               <span id = "passengers" className="icono" onClick={togglePassengerSelection}>
                 <span className="material-symbols-outlined">group</span>
               </span>
-              <div className="passenger-value">
+              <div id="passenger-count" className="passenger-value">
                 {adults + child + infants} {/* Mostrar el total de pasajeros */}
               </div>
             </div>
@@ -446,7 +446,7 @@ const handleOriginChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         <span className="icono">
           <span className="material-symbols-outlined">group</span>
         </span>
-        <div className="passenger-value">
+        <div id="passenger-count" className="passenger-value">
           {adults + child + infants} {/* Mostrar el total de pasajeros */}
         </div>
       </div>       
